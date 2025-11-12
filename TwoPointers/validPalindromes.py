@@ -11,6 +11,8 @@ def test_validPalindromes():
     sol = Solution()
 
     assert sol.isPalindrome("A man, a plan, a canal: Panama") == True
+    assert sol.isPalindrome("race a car") == True
+    assert sol.isPalindrome(" ") == True
 
 
 
