@@ -3,21 +3,6 @@ from typing import List
 
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        '''nums.sort()
-        result = 1
-        tmp = 1
-        for index in range (len(nums)-1):
-            if nums[index] == nums[index + 1]:
-                continue
-            if nums[index] == nums[index + 1]-1:
-                tmp += 1
-            else:
-                if tmp > result:
-                    result = tmp
-                    tmp = 1
-        if tmp > result:
-            result = tmp
-        return result'''
         if len(nums) == 0:
             return 0
         numsSet = set(nums)
@@ -32,9 +17,6 @@ class Solution:
                 result = max (result,sequence)
         return result
             
-
-
-
 
 def test_longuestConsecutiveSequence():
     sol = Solution()
